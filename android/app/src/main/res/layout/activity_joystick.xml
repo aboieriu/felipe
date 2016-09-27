@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.aboieriu.felipe.Joystick">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="Forward"
+        android:id="@+id/goForward"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="41dp"
+        android:layout_marginStart="41dp"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="left"
+        android:id="@+id/goLeft"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/goForward"
+        android:layout_alignStart="@+id/goForward"
+        android:layout_marginBottom="26dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="Right"
+        android:id="@+id/goRight"
+        android:layout_marginRight="36dp"
+        android:layout_marginEnd="36dp"
+        android:layout_alignTop="@+id/goLeft"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="Backward"
+        android:id="@+id/goBackwards"
+        android:layout_alignBottom="@+id/goForward"
+        android:layout_alignLeft="@+id/goRight"
+        android:layout_alignStart="@+id/goRight" />
+
+</RelativeLayout>
